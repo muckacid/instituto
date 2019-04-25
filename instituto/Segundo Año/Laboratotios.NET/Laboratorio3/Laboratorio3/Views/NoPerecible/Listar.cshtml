@@ -1,0 +1,86 @@
+﻿@model IEnumerable<Laboratorio3.Models.NoPerecible>
+
+@{
+    ViewBag.Title = "ListarNoPerecible";
+}
+
+<h2>ListarNoPerecible</h2>
+
+<p>
+    @Html.ActionLink("Nuevo Producto", "Crear")
+</p>
+<table class="table">
+    <tr>
+        <th rowspan="2" style="text-align:center;vertical-align:middle">
+            @Html.DisplayNameFor(model => model.Id)
+        </th>
+        <th rowspan="2" style="text-align:center;vertical-align:middle">
+            @Html.DisplayNameFor(model => model.Nombre)
+        </th>
+        <th rowspan="2" style="text-align:center;vertical-align:middle">
+            @Html.DisplayNameFor(model => model.CodBarra)
+        </th>
+        <th rowspan="2" style="text-align:center;vertical-align:middle">
+            @Html.DisplayNameFor(model => model.Precio)
+        </th>
+        <th rowspan="2" style="text-align:center;vertical-align:middle">
+            @Html.DisplayNameFor(model => model.Cantidad)
+        </th>
+        <th rowspan="2" style="text-align:center;vertical-align:middle">
+            @Html.DisplayNameFor(model => model.Estado)
+        </th>
+        <th rowspan="1" colspan="2" style="text-align:center;vertical-align:middle">
+            @Html.DisplayNameFor(model => model.Envasado)
+        </th>
+    </tr>
+    <tr>
+        <td colspan="1" rowspan="1" style="text-align:center">
+            @Html.DisplayNameFor(model => model.Envasado.Nombre)
+        </td>
+        <td colspan="1" rowspan="1" style="text-align:center">
+            @Html.DisplayNameFor(model => model.Envasado.Descripcion)
+        </td>
+    </tr>
+
+    @foreach (var item in Model)
+    {
+        <tr>
+
+            <td style="text-align:center">
+                @Html.DisplayFor(modelItem => item.Id)
+            </td>
+
+            <td style="text-align:center">
+                @Html.DisplayFor(modelItem => item.Nombre)
+            </td>
+            
+            <td style="text-align:center">
+                @Html.DisplayFor(modelItem => item.CodBarra)
+            </td>
+            <td style="text-align:center">
+                @Html.DisplayFor(modelItem => item.Precio)
+            </td>
+            <td style="text-align:center">
+                @Html.DisplayFor(modelItem => item.Cantidad)
+            </td>
+            <td style="text-align:center">
+                @Html.DisplayFor(modelItem => item.Estado)
+            </td>
+            <td style="text-align:center">
+                @Html.DisplayFor(modelItem => item.Envasado.Nombre)
+            </td>
+            <td style="text-align:center">
+                @Html.DisplayFor(modelItem => item.Envasado.Descripcion)
+            </td>
+
+
+
+            <td>
+                @*@Html.ActionLink("Edit", "Edit", new { /* id=item.PrimaryKey */ }) |*@
+                @Html.ActionLink("Detalle", "Detalle", new { id = item.Id }) @*|
+                @Html.ActionLink("Delete", "Delete", new { /* id=item.PrimaryKey */ })*@
+            </td>
+        </tr>
+    }
+
+</table>

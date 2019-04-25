@@ -1,0 +1,62 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+
+<div class="jumbotron">
+    <h1 style="font-size:14;color:black">@ViewBag.titulo</h1>
+    <p class="lead">Primera Fase de Desarrollo Aplicación Web MVC, creación de interfaz y menú con routing.</p>
+    @*<p><a href="https://asp.net" class="btn btn-primary btn-lg">Learn more &raquo;</a></p>*@
+</div>
+
+<div class="row">
+    <div class="col-md-4" style="background-color:beige">
+        <h2>Paso 1 (20 puntos)</h2>
+        <p>
+            Crear Nueva aplicación ASP.NET MVC.<br />
+            Modificar el Menú con los ítems: Inicio, Acerca, Contáctanos, Productos y además de cambiar el nombre por defecto a la aplicación. Esto se debe hacer desde el Layout de la solución.<br />
+            El nombre de la aplicación, se debe escribir como AppSetting dentro del archivo WebConfig.
+        </p>
+        @*<p><a class="btn btn-default" href="https://go.microsoft.com/fwlink/?LinkId=301865">Learn more &raquo;</a></p>*@
+    </div>
+    <div class="col-md-4" style="background-color:azure">
+        <h2>Paso 2 (20 puntos)</h2>
+        <p>
+            Dentro de la carpeta de modelo, debe crear el siguiente modelo de datos:<br />
+            Producto<br />
+            &nbsp;&nbsp;&nbsp;&nbsp;Propiedades:<br />
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;• Nombre → String<br />
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;• Codigo de Barra → String<br />
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;• Precio → int<br />
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;• Cantidad Disponible→ int<br />
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;• Estado → bool (indica si el producto está
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;disponible)<br /><br />
+            ProductoPerecible (hace herencia del objeto Producto)<br />
+            &nbsp;&nbsp;&nbsp;&nbsp;Propiedades:<br />
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;• Fecha de Vencimiento → Date<br />
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;• DiasParaVencer →Int ( Set Privado, se debe setear
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;solo tomando la fecha de vencimiento y la fecha
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;actual )<br />
+            <br />
+            ProductoNoPerecible (hace herencia del objeto Producto)<br />
+            &nbsp;&nbsp;&nbsp;&nbsp;Propiedades:<br />
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;• Tipo de Envasado → Envasado<br /><br />
+            Envasado<br />
+            Propiedades:<br />
+            &nbsp;&nbsp;&nbsp;&nbsp;• Nombre →String<br />
+            &nbsp;&nbsp;&nbsp;&nbsp;• Descripcion→String<br />
+            <br />
+            Agregar la librería System.ComponentModel.DataAnnotations, al código de su clase y utilizar las etiquetas Display Name, String Length y Required ( para todos las propiedades)<br />
+
+        </p>
+        @*<p><a class="btn btn-default" href="https://go.microsoft.com/fwlink/?LinkId=301866">Learn more &raquo;</a></p>*@
+    </div>
+    <div class="col-md-4" style="background-color:beige">
+        <h2>Paso 3 (20 puntos)</h2>
+        <p>
+            Implemente las vistas que permitan listar todos los productos, además que en esta lista
+            permita seleccionar un producto y ver sus características.<br />
+            Agregar opción de agregar nuevo producto.
+        </p>
+        @*<p><a class="btn btn-default" href="https://go.microsoft.com/fwlink/?LinkId=301867">Learn more &raquo;</a></p>*@
+    </div>
+</div>

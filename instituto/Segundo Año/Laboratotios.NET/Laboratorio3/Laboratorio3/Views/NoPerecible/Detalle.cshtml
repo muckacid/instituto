@@ -1,0 +1,60 @@
+﻿@model Laboratorio3.Models.NoPerecible
+
+@{
+    ViewBag.Title = "DetalleNoPerecible";
+}
+
+<h2>Detalle de Producto No Perecible</h2>
+
+<div>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Nombre)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Nombre)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.CodBarra)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.CodBarra)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Precio)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Precio)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Cantidad)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Cantidad)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Estado)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Estado)
+        </dd>
+        <dt>
+            <br />
+            @Html.DisplayNameFor(model => model.Envasado) <br />
+        </dt>
+        <dt style="font-weight:normal" >
+            @Html.DisplayNameFor(model => model.Envasado.Nombre) <br />
+            @Html.DisplayNameFor(model => model.Envasado.Descripcion) <br />
+        </dt>
+        <dd>
+            <br /> <br />
+            @Html.DisplayFor(model => model.Envasado.Nombre) <br />
+            @Html.DisplayFor(model => model.Envasado.Descripcion)
+        </dd>
+    </dl>
+</div>
+<p>
+    @*@Html.ActionLink("Edit", "Edit", new { /* id = Model.PrimaryKey */ }) |*@
+    @Html.ActionLink("Volver A La Lista", "Listar")
+</p>
