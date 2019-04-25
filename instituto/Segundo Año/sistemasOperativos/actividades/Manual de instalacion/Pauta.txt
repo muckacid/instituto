@@ -1,0 +1,10 @@
+•Crearan un documento detallando paso a paso la instalación de Windows server 2008 y la configuración de las siguientes herramientas
+•Configuracion active directory
+•Configuracion de ip (completo ip de red,mascara de red, puerta de enlace, dns)
+•Creacion de usuarios
+•Creacion de grupos
+•Agregar usuarios a grupos
+•Creacion de reglas (bloqueo de programa)
+•Creacion de reglas( colocar mismo fondo de pantalla en toda la red)
+•Creacion de unidad virtual para usuarios
+•Deberan usar imágenes y todos los paso a paso para realizar estas configuraciones
