@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="css/estilos.css" media="screen" />
+    <title>Formulario</title>
+</head>
+<body>
+    <div>
+            <p class="titulo">Bienvenido</p>
+    </div>
+    
+    <form action="index.html" method="get" >
+        <div>
+            <label for="name">Introduce tu nombre:</label>
+            <input type="text" id="name" name="name" />
+        </div>
+        <br>
+        
+        <div>
+            <label for="msg">Mensaje:</label>
+            <input id="msg" name="mes"/>
+        </div>
+        <br>
+        <div>
+            Selecciona el color de tu icono:<br>
+            <input type="radio" name="grupoColor" value="Rojo"> Rojo<br>
+            <input type="radio" name="grupoColor" value="Verde"> Verde<br>
+            <input type="radio" name="grupoColor" value="Axul"> Azul<br>
+        </div>
+        <hr>
+        <div>
+            Selecciona los dias con disponibilidad:<br>
+            <input type="checkbox" name="Lunes" value="disponible"> Lunes<br>
+            <input type="checkbox" name="Martes" value="disponible"> Martes<br>          
+            <input type="checkbox" name="Miercoles" value="disponible"> Miercoles<br>    
+            <input type="checkbox" name="Jueves" value="disponible"> Jueves<br>    
+            <input type="checkbox" name="Viernes" value="disponible"> Viernes<br>    
+            <input type="checkbox" name="Sabado" value="disponible"> Sabado<br>    
+            <input type="checkbox" name="Domingo" value="disponible"> Domingo<br>
+            <hr>
+            <input type="submit">
+        </div>
+        <hr>
+
+    </form>
+
+
+</body>
+</html>

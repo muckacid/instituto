@@ -1,0 +1,12 @@
+p{
+    color: red;
+}
+#miboton{
+    background: blue;
+}
+.cajon{
+    border-color: green;
+}
+*{
+    background: gray;
+}

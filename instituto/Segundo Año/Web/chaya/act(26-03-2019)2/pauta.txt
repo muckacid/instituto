@@ -1,0 +1,1 @@
+Generar la bandera chilena (colores y forma) que cubra/extienda el explorador web utilizando el sistema CSS Grid para la ubicación de sus elementos. tambien debe generar la estrella utilizando HTML5 Canvas (investigar)

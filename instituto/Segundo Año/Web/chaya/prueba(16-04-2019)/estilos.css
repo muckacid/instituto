@@ -1,0 +1,60 @@
+.egt{
+    border-collapse: collapse;
+    border-color: black;
+    border: black 1px solid;
+    width: auto;
+    background-color: rgba(231, 231, 231, 217);
+    margin: 2px;
+}
+#a1{
+    margin-left: 3px;
+    width: 100px;
+}
+p{
+    margin-left: 3px;
+}
+h1{
+    
+    background-color: rgba(226, 226, 226, 214)
+}
+.titulo{
+    width: auto;
+    margin: 0px;
+    margin-bottom: 10px;
+}
+
+#botonBorrar{
+    margin-right: 4px;
+}
+
+.wraper{
+
+    background-color: rgba(246, 246, 246, 232);
+    width: 680px;
+    
+}
+
+#a2{
+    margin-left: 3px;
+    width: 200px;
+}
+#a3{
+    margin-left: 3px;
+    width: 300px;
+}
+#botones{
+
+    float: left;
+    width: 150px;
+}
+#raro1{
+    margin-left: 3px;
+    float: left;
+    width: 100px;
+}
+#raro2{
+    margin-left: 3px;
+    float: left;
+    width: 300px;
+}
+

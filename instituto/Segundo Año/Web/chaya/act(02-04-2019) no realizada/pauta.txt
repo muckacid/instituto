@@ -1,0 +1,9 @@
+Desarrolle un programa para estimar el valor de p usando la siguiente suma infinita:
+p=4 (1- 1/3 + 1/5 - 1/7 + 1/9 - …)
+Referencia: https://es.wikipedia.org/wiki/Serie_de_Leibniz
+La entrada del programa debe ser un número entero n que indique cuántos términos de la suma se utilizará. 
+n: 3
+3.466666666666667
+
+n: 1000
+3.140592653839794

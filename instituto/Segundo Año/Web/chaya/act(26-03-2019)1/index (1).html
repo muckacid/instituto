@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="stay.css" media="screen" />
+    <title>Formulario</title>
+</head>
+<body>
+    <div>
+            <p>Rellena tu CV</p>
+    </div>
+    
+    <form action="index.html" method="get" >
+        <div>
+            <p>Nombre</p>
+            <input class="cajon" type="text" id="name" name="name" />
+        </div>
+        <div>
+            <p>Apellidos</p>
+            <input class="cajon" type="text" id="Apellidos" name="Apellidos" />
+        </div>
+        <div>
+            <p>Contraseña</p>
+            <input class="cajon" type="password" id="contrasena" name="password" />
+        </div>
+        <div>
+            <p>DNI</p>
+            <input class="cajon" type="text" id="" name="dni" />
+        </div>
+      
+
+        <div>
+            <p>Sexo</p>
+            <input type="radio" name="sexo" value="Hombre"> Hombre<br>
+            <input type="radio" name="sexo" value="Mujer"> Mujer<br>
+
+        </div>
+        <div>
+            <p>Incluir mi foto</p>
+            <input name="foto" type="file" >
+        </div>
+        <div>
+            <input type="checkbox" name="suscripcion" value="suscribir"> Suscribirme al boletin de novedades<br>
+        </div>
+        <input type="submit" value="Guardar cambios" id="miboton">
+        <input type="submit" value="Borrar datos del formulario">
+    </form>
+
+
+</body>
+</html>
