@@ -1,0 +1,70 @@
+Java A Fondo 80min
+PHP 60min
+HTML Y CSS 50min
+Charla Python 25min
+Charla Matrices 30min
+Android 45min
+BREAK lightning
+Programacion Web 45min
+ABD 90min
+Charlita 180min
+CharlitaDos 45min
+NuevaCharla 60min
+Java A Fondo 30min
+PHP 60min
+HTML Y CSS 150min
+Charla Python 25min
+Charla Matrices 30min
+Android 45min
+BREAK lightning
+Programacion Web 45min
+Administracion de bases de datos 90min
+Charlita 180min
+CharlitaDos 45min
+NuevaCharla 60min
+Java A Fondo 30min
+PHP 60min
+HTML Y CSS 150min
+Charla Python 25min
+Charla Matrices 30min
+Android 45min
+BREAK lightning
+Programacion Web 45min
+Administracion de bases de datos 90min
+Charlita 180min
+CharlitaDos 45min
+NuevaCharla 60minJava A Fondo 30min
+PHP 60min
+HTML Y CSS 150min
+Charla Python 25min
+Charla Matrices 30min
+Android 45min
+BREAK lightning
+Programacion Web 45min
+Administracion de bases de datos 90min
+Charlita 180min
+CharlitaDos 45min
+NuevaCharla 60min
+Java A Fondo 30min
+PHP 60min
+HTML Y CSS 150min
+Charla Python 25min
+Charla Matrices 30min
+Android 45min
+BREAK lightning
+Programacion Web 45min
+Administracion de bases de datos 90min
+Charlita 180min
+CharlitaDos 45min
+NuevaCharla 60minJava A Fondo 30min
+PHP 60min
+HTML Y CSS 150min
+Charla Python 25min
+Charla Matrices 30min
+Android 45min
+BREAK lightning
+Programacion Web 45min
+Administracion de bases de datos 90min
+Charlita 180min
+CharlitaDos 45min
+NuevaCharla 60min

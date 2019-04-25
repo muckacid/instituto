@@ -1,0 +1,7 @@
+Trabajo para subir nota.
+Crear un iniciar sesión con procedimientos almacenados.
+Primero en entregar --> 1 punto
+Segundo en entregar --> 5 Décimas
+Tercero en entregar --> 3 Décimas
+
+Hasta la próxima clase[29-04-19].
