@@ -1,0 +1,72 @@
+CREATE DATABASE juego;
+
+USE juego;
+
+CREATE TABLE usuario(
+    id_usuario INT AUTO_INCREMENT,
+    nickname VARCHAR(20),
+    password VARCHAR(64),
+    elo INT,
+
+    PRIMARY KEY(id_usuario),
+    UNIQUE(nickname)
+);
+
+INSERT INTO usuario VALUES(NULL,'muckAcid',SHA2('123',0),0);
+INSERT INTO usuario VALUES(NULL,'roberto',SHA2('123',0),0);
+INSERT INTO usuario VALUES(NULL,'newBastard',SHA2('123',0),0);
+
+CREATE TABLE partida(
+    id_partida INT AUTO_INCREMENT,
+    jugador1_id_fk INT,
+    jugador2_id_fk INT,
+    fecha DATE,
+
+    PRIMARY KEY(id_partida),
+    FOREIGN KEY(jugador1_id_fk) REFERENCES usuario(id_usuario),
+    FOREIGN KEY(jugador2_id_fk) REFERENCES usuario(id_usuario)
+);
+
+INSERT INTO partida VALUES(NULL,1,2,NOW());
+INSERT INTO partida VALUES(NULL,1,3,NOW());
+INSERT INTO partida VALUES(NULL,3,1,NOW());
+
+
+CREATE TABLE replay(
+    id_replay INT AUTO_INCREMENT,
+    jugador_id_fk INT,
+    partida_id_fk INT,
+    posicion_x INT,
+    posicion_y INT,
+    turno INT,
+
+    PRIMARY KEY(id_replay),
+    FOREIGN KEY(jugador_id_fk) REFERENCES usuario(id_usuario),
+    FOREIGN KEY(partida_id_fk) REFERENCES partida(id_partida)
+);
+
+INSERT INTO replay VALUES(NULL,1,1,0,0,1);
+INSERT INTO replay VALUES(NULL,2,1,0,1,2);
+INSERT INTO replay VALUES(NULL,1,1,2,0,3);
+INSERT INTO replay VALUES(NULL,2,1,1,0,4);
+INSERT INTO replay VALUES(NULL,1,1,0,2,5);
+INSERT INTO replay VALUES(NULL,2,1,1,1,6);
+INSERT INTO replay VALUES(NULL,1,1,2,2,7);
+INSERT INTO replay VALUES(NULL,2,1,1,2,8);
+-- gana jugador 2
+
+--consultar Replay
+SELECT usuario.nickname, replay.posicion_x, replay.posicion_y, partida.fecha
+FROM REPLAY
+INNER JOIN usuario ON jugador_id_fk = usuario.id_usuario
+INNER JOIN partida ON partida_id_fk = partida.id_partida
+WHERE partida_id_fk = 1;
+
+-- consultar un usuario //
+
+SELECT * FROM usuario WHERE nickname = 'nickname' AND password = SHA2('pass',0);
+
+
+
+
+
