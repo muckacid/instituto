@@ -1,0 +1,61 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+
+<div class="jumbotron">
+    <h1 style="font-size:25px;font-weight:bold">Laboratorio 5 – Servicio Web SOAP con Windows Communication Foundation (WCF)</h1>
+    <h2 class="lead" style="font-size:18px;font-weight:bold">¿Qué es un Servicio WEB? </h2>
+    <h3 style="font-size:16px">
+        Un Servicio Web  o Web Services en Ingles , es una tecnología que utiliza un conjunto de protocolos y estándares que sirven para intercambiar
+        datos entre aplicaciones. Distintas aplicaciones de software desarrolladas en lenguajes de programación diferentes, y ejecutadas sobre
+        cualquier plataforma. En la arquitectura de servicios web existen tres partes: proveedor de servicios web, el que pide el servicio web y el
+        publicador. El proveedor de servicios envía al publicador del servicio un fichero WSDL con la definición del servicio web. El que pide el servicio
+        contacta con el publicador y descubre quién es el proveedor (protocolo WSDL) y contacta con el proveedor(protocolo SOAP). El proveedor
+        valida la petición de servicio y envía el dato estructurado en formato XML utilizando el protocolo SOAP. El fichero XML es validado de nuevo
+        por el que pide el servicio utilizando un fichero XSD.
+    </h3>
+    <h2 class="lead" style="font-size:18px;font-weight:bold">XML</h2>
+    <h3 style="font-size:16px">
+        eXtensible Markup Language, traducido como "Lenguaje de Marcado Extensible" o "Lenguaje de Marcas Extensible", es un meta-lenguaje que 
+        permite definir lenguajes de marcas desarrollado por el World Wide Web Consortium (W3C) utilizado para almacenar datos en forma legible. 
+        Proviene del lenguaje SGML y permite definir la gramática de lenguajes específicos (de la misma manera que HTML es a su vez un lenguaje 
+        definido por SGML) para estructurar documentos grandes. A diferencia de otros lenguajes, XML da soporte a bases de datos, siendo útil 
+        cuando varias aplicaciones deben comunicarse entre sí o integrar información.
+    </h3>
+    <h2 class="lead" style="font-size:18px;font-weight:bold">Definición de Esquema XML</h2>
+    <h3 style="font-size:16px">
+        Mas conocido como XSD ( XML Schema Definition ), es un mecanismo para comprobar la validez de un documento XML, es decir, definir su
+        estructura: qué elementos, qué tipos de datos, que atributos, en qué orden, cuántas veces se repiten, etc.
+        <br /><br />
+        Un esquema XSD es un documento XML con la siguiente estructura: <br /> <br />
+        <div style="font-size:14px">
+            &lt;?xml version="1.0" encoding="UTF-8" ?> <br />
+            &lt;xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"> <br />
+            &lt;xs:element name="alumnos" /> <br />
+            &lt;/xs:schema>
+        </div>
+        <br />
+        Donde aparecen los siguientes elementos: <br /> <br />
+        &nbsp;&nbsp;&nbsp;&nbsp; • La etiqueta xml define la versión de XML utilizada y la codificación de caracteres del documento. <br /> <br />
+        &nbsp;&nbsp;&nbsp;&nbsp; • La etiqueta raíz xs:schema define el espacio de nombres del esquema XSD así como una serie de atributos opcionales que podéis ampliar
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;aquí. <br /> <br />
+        &nbsp;&nbsp;&nbsp;&nbsp; • La etiqueta xs:element que contiene la definición del elemento raíz del documento XML al que se le va a aplicar el esquema y que
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;explicaremos más adelante.
+
+        <br /> <br /> <br />
+        El documento XML deberá referenciar el esquema XSD con el que se va a validar utilizando la siguiente cabecera: <br /> <br />
+        &lt;?xml version="1.0" encoding="UTF-8" ?> <br />
+        &lt;alumnos xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" <br />
+        &nbsp;&nbsp;&nbsp;&nbsp;xsi:noNamespaceSchemaLocation="alumnos.xsd"> <br />
+        &nbsp;&nbsp;&nbsp;&nbsp;... <br />
+        &lt;/alumnos> <br />
+
+    </h3>
+    <h2 class="lead" style="font-size:18px;font-weight:bold">Tipos de datos</h2>
+    <h3 style="font-size:16px"></h3>
+
+
+
+
+    <p><a href="#" class="btn btn-primary btn-lg">Inicio &raquo;</a></p>
+</div>

@@ -107,7 +107,7 @@
     <Compile Include="Libro_Autor.cs">
       <DependentUpon>ADO_BD.tt</DependentUpon>
     </Compile>
-    <Compile Include="Modelo\LibroCs.cs" />
+    <Compile Include="Modelo\LibroSt.cs" />
     <Compile Include="Prestamo.cs">
       <DependentUpon>ADO_BD.tt</DependentUpon>
     </Compile>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://schemas.datacontract.org/2004/07/WCF.Modelo" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/WCF.Modelo" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:complexType name="ArrayOfLibroSt">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="LibroSt" nillable="true" type="tns:LibroSt" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfLibroSt" nillable="true" type="tns:ArrayOfLibroSt" />
+  <xs:complexType name="LibroSt">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Codigo" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Editorial" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ID" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ISBN" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Numero_de_Paginas" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Titulo" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="LibroSt" nillable="true" type="tns:LibroSt" />
+</xs:schema>
