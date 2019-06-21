@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+	<head>
+           
+	</head>
+
+	<body>
+		
+		<form>
+            <input type="text" placeholder="Ingresar multiplicador" id="multiplicador">
+            <input type="text" placeholder="Ingresar multiplicando" id="multiplicando">
+            <input type="button" value="Ingresar Elementos" onclick="hacer_click()"/>
+		</form>
+
+		<script >
+
+			function hacer_click()
+			{
+				
+				var multiplicador = Number.parseInt(document.getElementById("multiplicador").value);
+				var multiplicando = Number.parseInt(document.getElementById("multiplicando").value);
+				
+				alert(multiplicador + " - " + multiplicando);
+
+				var ac = 0;
+
+				while (multiplicador >= 1) {
+
+					if((multiplicador % 2) != 0){
+						
+						ac += multiplicando;
+						
+						console.log(ac);
+						
+						
+					}
+					multiplicando *= 2;
+					multiplicador = Math.trunc(multiplicador/2);
+
+				}
+
+				alert("Salida: " + ac);
+				
+			}
+
+		</script>
+
+
+	</body>
+
+</html>

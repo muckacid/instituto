@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+	<head>
+           
+	</head>
+
+	<body>
+		
+		<form>
+            <input type="text" id="matriz">
+            <input type="button" value="Ingresar Cuadrado" onclick="hacer_click()"/>
+		</form>
+
+		<script >
+
+
+            function tranformador(jeyson){
+                
+
+            }
+
+			function hacer_click(){
+
+                while(true){
+
+                    var cadena = document.getElementById("matriz").value;
+                    var va = this.tranformador(cadena);
+                    
+                    var diagonal = 0;
+                    for (let z = 0; z < va.length; z++) {
+                        diagonal += va[z][z];
+                    }
+//[{19,21,3,10,12},{25,2,9,11,18},{1,8,15,17,24},{7,14,16,23,5},{13,20,22,4,6}]
+                    var diagonal1 = 0;
+                    var largo = va.length
+                    for (let x = 0; x < largo; x++) {
+                        diagonal1 += parseInt(va[largo][x]);
+                        largo -= 1;
+                    }
+                    if(diagonal1 != diagonal){
+                        return console.log("no es magico");
+                    }
+                    
+                    
+                    var ac = 0;
+                    for (let i = 0; i < va.length; i++) {
+                        for (let j = 0; j < va[i].length; j++) {
+                            ac += va[i][j];
+                        }
+                        if(diagonal != ac){
+                            return console.log("esto no es magico");
+                        }
+                    }
+
+                    var ac = 0;
+                    for (let i = 0; i < va.length; i++) {
+                        for (let j = 0; j < va[i].length; j++) {
+                            ac += va[j][i];
+                        }
+                        if(diagonal != ac){
+                            return console.log("esto no es magico");
+                        }
+                    }
+
+                    return console.log("esto es magico")
+
+
+                }
+                
+			}
+		</script>
+	</body>
+</html>

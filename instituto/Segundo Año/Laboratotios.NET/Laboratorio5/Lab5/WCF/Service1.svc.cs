@@ -36,6 +36,11 @@ namespace WCF
 
             LAb5Entities cont = new LAb5Entities();
 
+
+            // cont.Libro.Add(Factory.TransformacionADao(lbSt));
+            // cont.SaveChanges();
+
+
             Libro lb = new Libro{
                 Codigo = int.Parse(lbSt.Codigo),
                 Titulo = lbSt.Titulo,
@@ -46,7 +51,6 @@ namespace WCF
 
             cont.Libro.Add(lb);
             cont.SaveChanges();
-
         }
 
     }

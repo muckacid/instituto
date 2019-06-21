@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+<body>
+
+    <button class="btn" id="btn" name="btn" value="btn">holaaa</button>
+
+
+    <script >
+
+        jQuery('#btn').click(function(){
+            
+            alert("holaa");
+            $.ajax({
+                
+                type: 'get',
+                url: 'http://localhost:49907/Api/Libroes',
+                xhrFields: {
+                    withCredentials: true
+            }
+            });
+            $.ajax({
+                
+                type:'post',dataType:"json",URL:"http://localhost:49907/Api/Libroes",success:function(data){alert(data);}
+
+            });
+        });
+    
+    </script>
+</body>
+</html>
